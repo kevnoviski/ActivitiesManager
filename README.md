@@ -1,2 +1,2 @@
 # ActivitiesManager
-An application where you can manage your activities.
+A .NET Core Web application where you can manage your activities.
