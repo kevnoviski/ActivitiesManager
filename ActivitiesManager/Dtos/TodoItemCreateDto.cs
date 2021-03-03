@@ -1,13 +1,10 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace ActivitiesManager.Models
+namespace ActivitiesManager.Dtos
 {
-    public class TodoItem
+    public class TodoItemCreateDto
     {
-        [Key]
-        public int Id { get; set; }
-
         [Required]
         [MaxLength(250)]
         public string Title { get; set; }
@@ -27,10 +24,5 @@ namespace ActivitiesManager.Models
 
         [Required]
         public int Priority { get; set; }
-
-        public TodoItem()
-        {
-            
-        }
     }
 }

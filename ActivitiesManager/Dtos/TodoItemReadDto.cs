@@ -1,36 +1,15 @@
 using System;
-using System.ComponentModel.DataAnnotations;
 
-namespace ActivitiesManager.Models
+namespace ActivitiesManager.Dtos
 {
-    public class TodoItem
+    public class TodoItemReadDto//contains all the original fields, its just here for study purpose
     {
-        [Key]
         public int Id { get; set; }
-
-        [Required]
-        [MaxLength(250)]
         public string Title { get; set; }
-
-        [Required]
-        [MaxLength(250)]
         public string Description { get; set; }
-
-        [Required]
         public DateTime DT_Creation { get; set; }
-
-        [Required]
         public DateTime DT_DeadLine { get; set; }
-
-        
         public DateTime? DT_Done { get; set; }
-
-        [Required]
         public int Priority { get; set; }
-
-        public TodoItem()
-        {
-            
-        }
     }
 }

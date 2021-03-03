@@ -2,7 +2,7 @@
 
 namespace ActivitiesManager.Data.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class secondsetup : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
